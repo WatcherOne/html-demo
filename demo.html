@@ -1,7 +1,25 @@
 <!DCOTYPE html>
 <html>
   <head>
-    <title>html的学习</title>
+    <meta charset="urf-8"/>
+    <!-- meta标签常见的用法 -->
+    <!-- 设置对网页的一些描述信息，可用做搜索引擎 -->
+    <meta name="author" content="zhubo"/>                 <!--作者-->
+    <meta name="description" content="html-demo-study"/>  <!--描述-->
+    <meta name="copyright" content="本页版权归个人所有"/>    <!--版权-->
+    <meta name="keywords" content="html,study,readonly"/> <!--关键词-->
+    <meta name="generator" content="code"/>               <!--编辑器-->
+    <!-- 设置特定的HTTP指令 -->
+    <!-- 5秒之后重新刷新页面，页面刷新完了之后又拿到这个指令，循环 -->
+    <!--<meta http-equiv="refresh" content="5"/>-->
+    <!-- 5秒之后重定位新的url -->
+    <!--<meta http-equiv="refresh" content="5;http://www.baidu.com"/> -->
+    <!-- 网页在缓存中的过期时间，一旦过期，必须到服务器上重新调阅 content必须设置GMT格式或者数字表示多少时间后 -->
+    <meta http-equiv="expires" content="31 DEC 2017"/>
+    <title>HTML的学习</title>
+    <base href="http://www.baidu.com" target="_blank">
   </head>
-  <body></body>
+  <body>
+    <a href="/s">点击测试base的用法(此处链接为'/s')</a>
+  </body>
 </html>
