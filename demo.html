@@ -1,25 +1,27 @@
 <!DCOTYPE html>
 <html>
   <head>
-    <meta charset="urf-8"/>
+    <meta charset="urf-8">
     <!-- meta标签常见的用法 -->
     <!-- 设置对网页的一些描述信息，可用做搜索引擎 -->
-    <meta name="author" content="zhubo"/>                 <!--作者-->
-    <meta name="description" content="html-demo-study"/>  <!--描述-->
-    <meta name="copyright" content="本页版权归个人所有"/>    <!--版权-->
-    <meta name="keywords" content="html,study,readonly"/> <!--关键词-->
+    <meta name="author" content="zhubo">                 <!--作者-->
+    <meta name="description" content="html-demo-study">  <!--描述-->
+    <meta name="copyright" content="本页版权归个人所有">    <!--版权-->
+    <meta name="keywords" content="html,study,readonly"> <!--关键词-->
     <meta name="generator" content="code"/>               <!--编辑器-->
     <!-- 设置特定的HTTP指令 -->
     <!-- 5秒之后重新刷新页面，页面刷新完了之后又拿到这个指令，循环 -->
-    <!--<meta http-equiv="refresh" content="5"/>-->
+    <!--<meta http-equiv="refresh" content="5">-->
     <!-- 5秒之后重定位新的url -->
-    <!--<meta http-equiv="refresh" content="5;http://www.baidu.com"/> -->
+    <!--<meta http-equiv="refresh" content="5;http://www.baidu.com"> -->
     <!-- 网页在缓存中的过期时间，一旦过期，必须到服务器上重新调阅 content必须设置GMT格式或者数字表示多少时间后 -->
-    <meta http-equiv="expires" content="31 DEC 2017"/>
+    <meta http-equiv="expires" content="31 DEC 2017">
     <title>HTML的学习</title>
-    <base href="http://www.baidu.com">
+    <base href="file:///Users/zb/zbo/html-demo/">
     <base target="_blank">
-    <link rel="stylesheet" type="text/css" href="demo.css">
+    <!-- 这个样式文件的路径一定要这么写 file:///Users/zb/zbo/html-demo/demo.css 不然就是在base里面加相对路径而且以'/'结尾 -->
+    <!-- 否则浏览器会报错说这个是css文件却发送的MIMEtype是type/html -->
+    <link rel="stylesheet" href="demo.css">
   </head>
   <body>
     <a href="/s">点击测试base的用法(此处链接为'/s')</a>
