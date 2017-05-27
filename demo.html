@@ -24,6 +24,48 @@
     <link rel="stylesheet" href="demo.css">
   </head>
   <body>
-    <a href="/s">点击测试base的用法(此处链接为'/s')</a>
+    <!-- 标题有6个h1开始，对应浏览器有默认样式，abbr缩写也有默认下划线样式 -->
+    <h3 class="title-three"><abbr class="title-abbr" title="查看源码可看到注释">个人主页</abbr></h3>
+    <div class="top-copy">- - - - - &copy; 归个人所有</div><hr/>
+
+    <!-- 两种引用方式 -->
+    <q>每日积累</q>
+    <blockquote class="blockquote-text">
+      英雄的出处<br/>
+      来自于内心的强大<br/>
+      来自于对梦想的执着追求<br/>
+      和你所从事职业的坚持与踏实<br/>
+      以及面对浮躁浮华的淡定和定力
+    </blockquote>
+
+    <!-- 文本格式化 -->
+    <em>归处：</em><strong>心安</strong>
+    <br/>
+    <em>爱好：</em>
+    <del datetime="2017-05-01">没有</del><sup>？</sup>&nbsp;
+    <ins>有</ins><sub>？</sub>
+    <hr/>
+
+    <!-- table的使用，虽然说table里面的属性都应该写进css但是我发现没找到对应的css，暂时放在里面 -->
+    <table width="20%" border="1px" cellspacing="0px" cellpadding="5px">
+      <!-- table标题 -->
+      <caption>善始善终</caption>
+      <tbody>
+        <tr>
+          <td>a</td>
+          <td>b</td>
+        </tr>
+        <tr>
+          <td>c</td>
+          <td>d</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 特殊标签 -->
+    <bdo dir="rtl">倒着读是猪</bdo>
+    <mark>今天的你比昨天的你更好</mark><br/>
+    努力的程度：<progress max="100" value="80"></progress><br/>
+    量质的度量：<meter max="100" value="20" high="80" low="20" optimum="75"></meter><br/>
   </body>
 </html>
